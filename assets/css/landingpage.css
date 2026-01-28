@@ -1,3 +1,35 @@
+/* General Styles */
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #3E3D52;
+    background: #fff;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 900;
+    color: #F9FAF8;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: 900;
+    color: #1F2937;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+p:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
 .section-padding {
     padding: var(--section-margins) 0;
 }
@@ -46,4 +78,130 @@
 
 .text-center {
     text-align: center;
+}
+
+/* Header Styles */
+.header-sect {
+    padding: 15px 0;
+}
+
+.header-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.header-row :is(span, ul) {
+    flex: 0 0 fit-content;
+}
+
+.header-row span {
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 1;
+}
+
+.header-row ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    column-gap: 25px;
+    list-style: none;
+}
+
+/* Hero Section Styles */
+.hero-sect .col-md-6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.hero-sect img {
+    width: 100%;
+    height: auto;
+    margin-top: 35px;
+}
+
+@media (min-width: 1025px) {
+    .hero-sect img {
+        margin-top: 0;
+    }
+}
+
+/* Icon Section Styles */
+.info-sect .container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 35px;
+}
+
+.icon-row {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+}
+
+.info-item {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.info-item-icon {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    max-width: 350px;
+    border: 3px solid #3882F6;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+
+@media (min-width: 1025px) {
+    .icon-row {
+        flex-direction: row;
+    }
+}
+
+/* Quote Section Styles */
+.quote-sect blockquote p {
+    font-size: 36px;
+    font-weight: 300;
+    font-style: italic;
+    color: #1F2937;
+    line-height: 1.2;
+}
+
+.quote-sect cite {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1F2937;
+    text-align: right;
+    display: block;
+    padding: 0 75px;
+}
+
+/* CTA Section Styles */
+.cta-content {
+    padding: 25px 50px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+}
+
+@media (min-width: 1025px) {
+    .cta-content {
+        padding: 50px 75px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+/* Footer Styles */
+.footer-sect {
+    padding: 15px 0;
 }
